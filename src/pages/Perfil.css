@@ -1,0 +1,27 @@
+.perfil-container {
+    display: flex;
+    align-items: center; /* Centra los elementos en el eje Y */
+    justify-content: center; /* Centra los elementos en el eje X */
+    gap: 20px; /* Espaciado entre la imagen y los datos */
+    
+  }
+  
+  .perfil-imagen img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ccc; /* Borde opcional */
+  }
+  
+  .perfil-datos {
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  .perfil-datos h1 {
+    margin-bottom: 10px;
+  }
+  
+  .perfil-datos p {
+    margin: 5px 0;
+  }
