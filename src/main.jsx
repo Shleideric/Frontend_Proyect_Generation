@@ -9,7 +9,7 @@ import LoginBanco from "./pages/Banco/loginBanco.jsx";
 import RegisterBanco from "./pages/Banco/registerBanco.jsx";
 import { UserProvider } from "./Context/UserContext.jsx";
 // import HomeBanco from "./pages/Banco/HomeBanco.jsx";
-import Home from "./pages/Home.jsx";
+import Home from "./pages/Banco/Home.jsx";
 
 createRoot(document.getElementById("root")).render(
   <UserProvider>

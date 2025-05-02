@@ -45,9 +45,13 @@ export const usuarioService = {
         }
     },
 
-    userEmail: async (datosUsuario) => {
+    userEmail: async (datosUsuario, token) => {  // <- Ahora recibe el token
         try {
-            const response = await api.get(`users/userEmail`, datosUsuario);
+            const response = await api.get("users/userEmail", datosUsuario, {
+                headers: {
+                    'Authorization': `Bearer ${token}`  // Envía el token en el header
+                }
+            });
             return response.data;
         } catch (error) {
             console.log("Hubo un error al obtener el usuario por email", error);
